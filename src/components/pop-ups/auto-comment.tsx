@@ -7,7 +7,7 @@ const abbezee = ABeeZee({
   subsets: ["latin"],
   weight: ["400"],
 });
-function AutoComment({onClose} : {onClose: () => void}) {
+function AutoComment({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-[#000000c0] backdrop-blur-[14px] flex justify-center items-center">
       <div className="md:w-[57.5rem] w-full md:h-[38.75rem] h-full md:rounded-[1.25rem] bg-secondary flex relative overflow-hidden">
@@ -42,14 +42,16 @@ function AutoComment({onClose} : {onClose: () => void}) {
             <br /> account&apos;s engagement today.
           </p>
 
-          <div className="mt-[2rem] md:w-[14.25rem] w-full h-[2.75rem] btn-gradient rounded-[0.5rem] flex justify-center items-center gap-x-[0.5rem] cursor-pointer md:absolute md:bottom-6 md:left-[2.5rem]  relative -bottom-[57%]">
-            <p className="font-semibold text-sm">Activate AI comments</p>
-            <Image
-              src="/icons/next.svg"
-              alt="let-experts-assist"
-              width={13.5}
-              height={10.5}
-            />
+          <div className="w-full flex flex-1 absolute bottom-4 left-0 items-end md:px-[2.5rem] px-[1.5rem]">
+            <div className="md:w-[13.5rem] w-full h-[2.75rem] btn-gradient rounded-[0.5rem] flex justify-center items-center gap-x-[0.5rem] cursor-pointer ">
+              <p className="font-semibold text-sm">Activate AI comments</p>
+              <Image
+                src="/icons/next.svg"
+                alt="let-experts-assist"
+                width={13.5}
+                height={10.5}
+              />
+            </div>
           </div>
         </div>
         <div className="w-1/2 h-full relative md:block hidden">

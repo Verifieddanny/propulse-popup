@@ -49,11 +49,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@layer base {
+  * {
+  @apply m-0 p-0 box-border;
+}
 
 
 body {
   font-family: var(--font-custom, Arial, Helvetica, sans-serif);
   @apply bg-background text-foreground ;
+}
+
 }
 
 button {

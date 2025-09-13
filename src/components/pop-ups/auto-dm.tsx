@@ -7,7 +7,7 @@ const abbezee = ABeeZee({
   subsets: ["latin"],
   weight: ["400"],
 });
-function AutoDm({onClose} : {onClose: () => void}) {
+function AutoDm({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-[#000000c0] backdrop-blur-[14px] flex justify-center items-center">
       <div className="md:w-[57.5rem] w-full md:h-[38.75rem] h-full md:rounded-[1.25rem] bg-secondary flex relative overflow-hidden">
@@ -42,15 +42,16 @@ function AutoDm({onClose} : {onClose: () => void}) {
             Enable automatic DMs and send a personalized
             <br /> welcome message to each new follower.
           </p>
-
-          <div className="mt-[2rem] md:w-[13.25rem] w-full h-[2.75rem] btn-gradient rounded-[0.5rem] flex justify-center items-center gap-x-[0.5rem] cursor-pointer md:absolute md:bottom-6 md:left-[2.5rem]  relative -bottom-[57%]">
-            <p className="font-semibold text-sm">Activate Auto DM</p>
-            <Image
-              src="/icons/next.svg"
-              alt="let-experts-assist"
-              width={13.5}
-              height={10.5}
-            />
+          <div className="w-full flex flex-1 absolute bottom-4 left-0 items-end md:px-[2.5rem] px-[1.5rem]">
+            <div className="md:w-[13.5rem] w-full h-[2.75rem] btn-gradient rounded-[0.5rem] flex justify-center items-center gap-x-[0.5rem] cursor-pointer ">
+              <p className="font-semibold text-sm">Activate Auto DM</p>
+              <Image
+                src="/icons/next.svg"
+                alt="let-experts-assist"
+                width={13.5}
+                height={10.5}
+              />
+            </div>
           </div>
         </div>
         <div className="w-1/2 h-full relative md:block hidden">
@@ -71,26 +72,25 @@ function AutoDm({onClose} : {onClose: () => void}) {
             />
           </div>
 
-        <div className="w-fit h-fit rounded-[1rem] absolute top-[4rem] left-[2rem] overflow-hidden bg-[#FBFBFB26] backdrop-blur-lg">
-
-          <Image
-            src="/images/pop-images/ig-post.png"
-            alt="ig-post"
-            width={278.78}
-            height={349.03}
-            className=" drop-shadow-2xl"
+          <div className="w-fit h-fit rounded-[1rem] absolute top-[4rem] left-[2rem] overflow-hidden bg-[#FBFBFB26] backdrop-blur-lg">
+            <Image
+              src="/images/pop-images/ig-post.png"
+              alt="ig-post"
+              width={278.78}
+              height={349.03}
+              className=" drop-shadow-2xl"
             />
-            </div>
+          </div>
 
-            <div className="w-fit h-fit rounded-[1rem] absolute top-[22rem] left-[10rem] overflow-hidden bg-[#FBFBFB26] backdrop-blur-lg">
-                <Image
-            src="/images/pop-images/ig-comments.png"
-            alt="ig-post"
-            width={239.77}
-            height={226.71}
-            className=" drop-shadow-2xl"
+          <div className="w-fit h-fit rounded-[1rem] absolute top-[22rem] left-[10rem] overflow-hidden bg-[#FBFBFB26] backdrop-blur-lg">
+            <Image
+              src="/images/pop-images/ig-comments.png"
+              alt="ig-post"
+              width={239.77}
+              height={226.71}
+              className=" drop-shadow-2xl"
             />
-            </div>
+          </div>
         </div>
       </div>
     </div>

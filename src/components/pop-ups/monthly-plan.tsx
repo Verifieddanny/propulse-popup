@@ -9,7 +9,7 @@ const abbezee = ABeeZee({
   weight: ["400"],
 });
 
-function MonthlyPlan({onClose} : {onClose: () => void}) {
+function MonthlyPlan({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-[#000000c0] backdrop-blur-[14px] flex justify-center items-center">
       <div className="md:w-[57.5rem] w-full md:h-[38.75rem] h-full md:rounded-[1.25rem] bg-secondary flex relative overflow-hidden">
@@ -46,14 +46,16 @@ function MonthlyPlan({onClose} : {onClose: () => void}) {
             Boost your growth — commit for longer, pay less.
           </p>
 
-          <div className="mt-[2rem] md:w-[13.5rem] w-full h-[2.75rem] btn-gradient rounded-[0.5rem] flex justify-center items-center gap-x-[0.5rem] cursor-pointer md:absolute md:bottom-6 md:left-[2.5rem]  relative -bottom-[57%]">
-            <p className="font-semibold text-sm">Discover the offers</p>
-            <Image
-              src="/icons/next.svg"
-              alt="let-experts-assist"
-              width={13.5}
-              height={10.5}
-            />
+          <div className="w-full flex flex-1 absolute bottom-4 left-0 items-end md:px-[2.5rem] px-[1.5rem]">
+            <div className="md:w-[13.5rem] w-full h-[2.75rem] btn-gradient rounded-[0.5rem] flex justify-center items-center gap-x-[0.5rem] cursor-pointer ">
+              <p className="font-semibold text-sm">Discover the offers</p>
+              <Image
+                src="/icons/next.svg"
+                alt="let-experts-assist"
+                width={13.5}
+                height={10.5}
+              />
+            </div>
           </div>
         </div>
         <div className="w-1/2 h-full relative md:block hidden">
@@ -91,7 +93,13 @@ function MonthlyPlan({onClose} : {onClose: () => void}) {
             />
           </div>
 
-          <Image src="/icons/wubble-right-arrow.svg" alt="monthly" width={49.66} height={38.56} className="absolute top-[14rem] right-[6rem]" />
+          <Image
+            src="/icons/wubble-right-arrow.svg"
+            alt="monthly"
+            width={49.66}
+            height={38.56}
+            className="absolute top-[14rem] right-[6rem]"
+          />
 
           <div className="absolute top-[18rem] right-[4rem]">
             <PlanCard
@@ -102,7 +110,13 @@ function MonthlyPlan({onClose} : {onClose: () => void}) {
             />
           </div>
 
-          <Image src="/icons/wubble-left-arrow.svg" alt="quarterly" width={47} height={72.01} className="absolute top-[17.6rem] left-[1rem]" />
+          <Image
+            src="/icons/wubble-left-arrow.svg"
+            alt="quarterly"
+            width={47}
+            height={72.01}
+            className="absolute top-[17.6rem] left-[1rem]"
+          />
 
           <div className="absolute top-[24rem] right-[14rem]">
             <PlanCard
@@ -112,12 +126,25 @@ function MonthlyPlan({onClose} : {onClose: () => void}) {
               className="background-gradient backdrop-blur-[49.52px]"
             />
           </div>
-           <Image src="/icons/wubble-right-arrow.svg" alt="monthly" width={49.66} height={38.56} className="absolute top-[30rem] right-[8rem]" />
+          <Image
+            src="/icons/wubble-right-arrow.svg"
+            alt="monthly"
+            width={49.66}
+            height={38.56}
+            className="absolute top-[30rem] right-[8rem]"
+          />
 
-           <div className="flex items-baseline absolute top-[35rem] right-[10rem]">
-            <Image src="/icons/bottom-arrow.svg" alt="get-4-months-free" width={24.12} height={9.65} />
-            <p className={`${abbezee.variable} text-[0.9rem]`}>Get 4 Months Free!</p>
-           </div>
+          <div className="flex items-baseline absolute top-[35rem] right-[10rem]">
+            <Image
+              src="/icons/bottom-arrow.svg"
+              alt="get-4-months-free"
+              width={24.12}
+              height={9.65}
+            />
+            <p className={`${abbezee.variable} text-[0.9rem]`}>
+              Get 4 Months Free!
+            </p>
+          </div>
         </div>
       </div>
     </div>
