@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import TargettingSection from "@/components/components/landing/targeting-section";
+// import TargettingSection from "@/components/components/landing/targeting-section";
 import AutoComment from "@/components/pop-ups/auto-comment";
 import AutoDm from "@/components/pop-ups/auto-dm";
 import MonthlyPlan from "@/components/pop-ups/monthly-plan";

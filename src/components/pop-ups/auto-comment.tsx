@@ -39,7 +39,7 @@ function AutoComment({onClose} : {onClose: () => void}) {
           </p>
           <p className="text-[#CBD5E1]">
             Activate AI-powered comments to increase your
-            <br /> account's engagement today.
+            <br /> account&apos;s engagement today.
           </p>
 
           <div className="mt-[2rem] md:w-[14.25rem] w-full h-[2.75rem] btn-gradient rounded-[0.5rem] flex justify-center items-center gap-x-[0.5rem] cursor-pointer md:absolute md:bottom-6 md:left-[2.5rem]  relative -bottom-[57%]">

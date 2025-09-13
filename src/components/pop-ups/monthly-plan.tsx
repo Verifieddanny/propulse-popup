@@ -36,7 +36,7 @@ function MonthlyPlan({onClose} : {onClose: () => void}) {
           <p
             className={`${abbezee.variable} mt-[2.4rem] mb-[1rem] text-[1.5rem]`}
           >
-            You've been using Propulse for a<br /> month.{" "}
+            You&apos;ve been using Propulse for a<br /> month.{" "}
             <span className="text-gradient">Ready to save up</span>
             <br />
             <span className="text-gradient-2">to 30%</span> by switching to a

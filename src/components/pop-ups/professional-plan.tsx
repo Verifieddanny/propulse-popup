@@ -36,7 +36,7 @@ function ProfessionalPlan({onClose} : {onClose: () => void}) {
           <p
             className={`${abbezee.variable} mt-[2.4rem] mb-[1rem] text-[1.5rem]`}
           >
-            You're <span className="text-gradient">already doing great</span>{" "}
+            You&apos;re <span className="text-gradient">already doing great</span>{" "}
             with
             <br /> the Starter plan!
           </p>
