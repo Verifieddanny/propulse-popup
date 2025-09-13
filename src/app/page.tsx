@@ -22,7 +22,7 @@ export default function Home() {
     <div className="w-full h-full">
       {/* <TargettingSection /> */}
       {/* Demo buttons to trigger popups - remove these in production */}
-      <div className="z-50 flex gap-2 mt-[4rem]">
+      {activePopup === null && <div className="z-50 flex gap-2 mt-[4rem]">
         <button 
           onClick={() => showPopup('monthly')}
           className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
@@ -55,7 +55,7 @@ export default function Home() {
             Hide Popup
           </button>
         )}
-      </div>
+      </div>}
 
       {/* Conditional popup rendering */}
       {activePopup === 'monthly' && <MonthlyPlan onClose={hidePopup} />}
