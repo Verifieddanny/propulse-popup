@@ -46,7 +46,7 @@ function MonthlyPlan({ onClose }: { onClose: () => void }) {
             Boost your growth — commit for longer, pay less.
           </p>
 
-          <div className="w-full flex flex-1 absolute bottom-[4rem] left-0 items-end md:px-[2.5rem] px-[1.5rem]">
+          <div className="w-full flex flex-1 absolute bottom-[6rem] left-0 items-end md:px-[2.5rem] px-[1.5rem]">
             <div className="md:w-[13.5rem] w-full h-[2.75rem] btn-gradient rounded-[0.5rem] flex justify-center items-center gap-x-[0.5rem] cursor-pointer ">
               <p className="font-semibold text-sm">Discover the offers</p>
               <Image
