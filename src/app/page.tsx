@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
       {/* <TargettingSection /> */}
       {/* Demo buttons to trigger popups - remove these in production */}
       <div className="z-50 flex gap-2 mt-[4rem]">
