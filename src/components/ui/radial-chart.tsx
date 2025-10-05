@@ -5,7 +5,7 @@ export default function RadialChart({
   maxValue = 100, 
   size = 36, // 2.25rem = 36px
   strokeWidth = 4,
-  backgroundColor = '#334155', 
+  // backgroundColor = '#334155', 
   progressColor = '#FFBB5B', 
   textColor = '#ffffff'
 }) {
