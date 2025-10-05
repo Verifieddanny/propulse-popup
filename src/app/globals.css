@@ -128,3 +128,7 @@ button {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.no-scroll::-webkit-scrollbar{
+  display: none;
+}
