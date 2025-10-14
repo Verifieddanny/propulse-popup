@@ -6,8 +6,10 @@ import AutoComment from "@/components/pop-ups/auto-comment";
 import AutoDm from "@/components/pop-ups/auto-dm";
 import MonthlyPlan from "@/components/pop-ups/monthly-plan";
 import ProfessionalPlan from "@/components/pop-ups/professional-plan";
-import ConnectIG from "@/components/pop-ups/connect-ig";
-import PendingConnect from "@/components/pop-ups/pending-connect";
+import ConnectIGFrench from "@/components/pop-ups/connect-ig-french";
+import ConnectIGEnglish from "@/components/pop-ups/connect-ig-english";
+import PendingConnectFrench from "@/components/pop-ups/pending-connect-french";
+import PendingConnectEnglish from "@/components/pop-ups/pending-connect-english";
 
 export default function Home() {
   const [activePopup, setActivePopup] = useState<string | null>(null);
@@ -50,16 +52,28 @@ export default function Home() {
           Show Auto Comment
         </button>
         <button 
-          onClick={() => showPopup('connectIg')}
+          onClick={() => showPopup('connectIgFrench')}
           className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
         >
-          Show Connect IG
+          Show Connect IG French
         </button>
         <button 
-          onClick={() => showPopup('pendingConnect')}
+          onClick={() => showPopup('pendingConnectFrench')}
           className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
         >
-          Show Pending Connect Flow
+          Show Pending Connect Flow French
+        </button>
+        <button 
+          onClick={() => showPopup('connectIgEnglish')}
+          className="px-4 py-2 bg-yellow-500 text-black rounded hover:bg-yellow-600"
+        >
+          Show Connect IG English
+        </button>
+        <button 
+          onClick={() => showPopup('pendingConnectEnglish')}
+          className="px-4 py-2 bg-amber-500 text-black rounded hover:bg-amber-600"
+        >
+          Show Pending Connect Flow English
         </button>
         {activePopup && (
           <button 
@@ -76,8 +90,10 @@ export default function Home() {
       {activePopup === 'professional' && <ProfessionalPlan onClose={hidePopup} />}
       {activePopup === 'autoDm' && <AutoDm onClose={hidePopup} />}
       {activePopup === 'autoComment' && <AutoComment onClose={hidePopup} />}
-      {activePopup === 'connectIg' && <ConnectIG onClose={hidePopup} />}
-      {activePopup === 'pendingConnect' && <PendingConnect onClose={hidePopup} />}
+      {activePopup === 'connectIgFrench' && <ConnectIGFrench onClose={hidePopup} />}
+      {activePopup === 'pendingConnectFrench' && <PendingConnectFrench onClose={hidePopup} />}
+      {activePopup === 'connectIgEnglish' && <ConnectIGEnglish onClose={hidePopup} />}
+      {activePopup === 'pendingConnectEnglish' && <PendingConnectEnglish onClose={hidePopup} />}
     </div>
   );
 }

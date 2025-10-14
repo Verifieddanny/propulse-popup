@@ -8,7 +8,7 @@ type HandlePaste = (e: React.ClipboardEvent<HTMLInputElement>) => void;
 
 
 
-function StepTwo() {
+function StepTwo({ setNext }: { setNext: (value: boolean) => void }) {
     const [isConfirmed, setIsConfirmed] = useState<boolean>(false);
 
     const [code, setCode] = useState(['', '', '', '', '', '', '', '']);
@@ -20,6 +20,13 @@ function StepTwo() {
         }
     }, []);
 
+    useEffect(() => {
+        if (code.some(digit => digit !== '')) {
+            setNext(true)
+        } else {
+            setNext(false)
+        }
+    }, [code])
 
     const handleChange: HandleChange = (index, value) => {
         // Only allow numbers
