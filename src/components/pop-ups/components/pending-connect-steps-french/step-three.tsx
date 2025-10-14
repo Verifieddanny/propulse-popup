@@ -1,11 +1,20 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CrossAdd, IGInputIcon } from '../icons'
 import Image from 'next/image'
 
-function StepThree() {
+function StepThree({setFinished}: {setFinished: (value: boolean) => void}) {
     const [accounts, setAccounts] = useState<string[]>([])
     const [user, setUser] = useState<string>("")
+
+    useEffect(() => {
+            if(accounts.length > 0) {
+                setFinished(true)
+            } else{
+                setFinished(false)
+            }
+        }, [accounts])
+    
 
     const handleAddAccount = () => {
         if (!user.trim()) return; // Prevent empty strings
