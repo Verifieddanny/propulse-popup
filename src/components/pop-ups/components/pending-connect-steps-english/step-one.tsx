@@ -21,7 +21,7 @@ function StepOne() {
             <div className='flex flex-col'>
                 <div className={`w-full ${selected === 'engagement' ? "bg-gradient-to-r from-[#B36AE9] via-[#EC6189] to-[#FCA74B]" : "bg-[#334155]"} p-[1px] h-[4.875rem] my-[0.5rem] text-white duration-300 hover:bg-gradient-to-l ease-in-out cursor-pointer rounded-[0.75rem] group box-border`}>
                     <div
-                        className="h-full px-[1.375rem] py-[0.75rem] rounded-[0.75rem] bg-gray-900 transition duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:transition group-hover:duration-300 group-hover:ease-in-out flex justify-between items-center"
+                        className="h-full w-full px-[1.375rem] py-[0.75rem] rounded-[0.75rem] bg-gray-900 transition duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:ease-in-out flex justify-between items-center"
                         onClick={() => handleSelect('engagement')}
                     >
                         <div className='flex items-center gap-x-2'>
@@ -37,7 +37,7 @@ function StepOne() {
 
                 <div className={`w-full ${selected === 'followers' ? "bg-gradient-to-r from-[#B36AE9] via-[#EC6189] to-[#FCA74B]" : "bg-[#334155]"} p-[1px] my-[0.5rem] h-[4.875rem] text-white duration-300 hover:bg-gradient-to-l ease-in-out cursor-pointer rounded-[0.75rem] group box-border`}>
                     <div
-                        className="h-full  px-[1.375rem] py-[0.75rem] rounded-[0.75rem] bg-gray-900 transition duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:transition group-hover:duration-300 group-hover:ease-in-out flex justify-between items-center"
+                        className="h-full w-full  px-[1.375rem] py-[0.75rem] rounded-[0.75rem] bg-gray-900 transition duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:ease-in-out flex justify-between items-center"
                         onClick={() => handleSelect('followers')}
                     >
                         <div className='flex items-center gap-x-2'>
@@ -53,7 +53,7 @@ function StepOne() {
 
                 <div className={`w-full ${selected === 'growth' ? "bg-gradient-to-r from-[#B36AE9] via-[#EC6189] to-[#FCA74B]" : "bg-[#334155]"} p-[1px] my-[0.5rem] h-[4.875rem] text-white duration-300 hover:bg-gradient-to-l ease-in-out cursor-pointer rounded-[0.75rem] group box-border`}>
                     <div
-                        className="h-full  px-[1.375rem] py-[0.75rem] rounded-[0.75rem] bg-gray-900 transition duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:transition group-hover:duration-300 group-hover:ease-in-out flex justify-between items-center"
+                        className="h-full w-full  px-[1.375rem] py-[0.75rem] rounded-[0.75rem] bg-gray-900 transition duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:ease-in-out flex justify-between items-center"
                         onClick={() => handleSelect('growth')}
                     >
                         <div className='flex items-center gap-x-2'>
